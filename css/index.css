@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #c7c6c6;
+    margin: 0;
+    padding: 25px;
+}
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    margin-bottom: 25px;
+}
+h2 { margin-top: 0; }
+
+/* Filtros */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 18px;
+}
+.filters label {
+    font-size: 13px;
+}
+.filters select,
+.filters input {
+    padding: 7px 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2d89ef;
+    color: #ffffff;
+    font-size: 13px;
+}
+#limpiar {
+    background: #777777;
+}
+
+/* Panel OP */
+#panelOP {
+    display: none;
+    background: #e7f1ff;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-top: 12px;
+    border-left: 4px solid #2d89ef;
+    font-size: 13px;
+}
+#panelOP-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.panelOP-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+.panelOP-row span::after {
+    content: "|";
+    margin-left: 10px;
+    color: #777;
+}
+.panelOP-row span:last-child::after {
+    content: "";
+}
+
+/* Summary KPI */
+.summary {
+    font-size: 13px;
+    margin-top: 12px;
+}
+.summary-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+.summary-row span::after {
+    content: "|";
+    margin-left: 10px;
+    color: #777;
+}
+.summary-row span:last-child::after {
+    content: "";
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+th {
+    background: #333333;
+    color: #ffffff;
+    padding: 8px;
+    font-size: 13px;
+}
+td {
+    background: #ffffff;
+    border: 1px solid #7a7a7a;
+    padding: 8px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Paginación */
+.paginacion {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+}
+.paginacion button {
+    background: #444444;
+}
+
+/* Total acumulado */
+#totalAcumulado {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+/* Botón azul explícito (aunque el button ya es azul) */
+.btn-azul {
+    background: #2d89ef;
+    color: #ffffff;
+}
+
+/* Inventario estático */
+#cardInventario h3 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.tabla-inventario-estatico {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.tabla-inventario-estatico th,
+.tabla-inventario-estatico td {
+    border: 1px solid #dddddd;
+    padding: 6px 8px;
+}
+
+.btn-remove-static {
+    padding: 4px 8px;
+    font-size: 12px;
+    background: #777777;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-add-static {
+    padding: 4px 8px;
+    font-size: 12px;
+    background: #2d89ef;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
